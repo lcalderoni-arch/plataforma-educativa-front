@@ -119,7 +119,7 @@ export default function CreateUserModal({ isOpen, onClose, onUserCreated }) {
 
   // --- RENDERIZADO (Igual que antes) ---
   return (
-    <div className="modal-overlay" onClick={(e) => e.currentTarget === e.target && onClose()}>
+    <div className="modal-overlay">
       <div className="modal fixed-modal" role="dialog" aria-modal="true" aria-labelledby="create-user-title">
         <button className="modal-close" onClick={onClose} aria-label="Cerrar">×</button>
         <div className="modal-body">
