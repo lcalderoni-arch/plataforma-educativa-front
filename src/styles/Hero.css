@@ -1,22 +1,30 @@
-.Fondo {
-  position: relative;
-  width: 100%;
-  height: 40em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
+.content-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* Esto alinea el título y la tarjeta */
+    justify-content: space-between;
+    /* Separa las dos columnas */
 
-  background-image: url("../assets/rimac.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+    /* El padding lateral que antes estaba en el padre, ahora va aquí */
+    padding: 0 100px;
+    box-sizing: border-box;
 }
 
-.Fondo .contenido-fondo {
-  position: relative;
-  text-align: center;
-  color: black;
+.contenido-fondo {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+
+    padding-top: 68px;
+
+    background-image: url("../assets/rimac.jpg");
+    background-blend-mode: lighten;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .Fondo h1 {
